@@ -1,10 +1,412 @@
-body {
+/* Css reset styles starts here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Css reset styles ends here */
+
+/* header section styles starts here */
 .header-section {
-  background-image: url(./Images/water-on-glass-background.jpeg)
+  position: relative;
+  background-image: url(Images/plain-gray-background.jpg);
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.header-wrapper {
+  max-width: 1800px;
+  margin: 0px auto;
+  width: 82%;
+  padding-top: 40px;
+}
+
+.header-wrapper>h1>a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Playfair Display', serif;
+  margin-left: 140px;
+
+}
+
+
+
+h1>a:hover {
+  color: #54aa26;
+}
+
+.header-wrapper>h2 {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 0.1rem;
+  font-family: 'Playfair Display', serif;
+  margin-top: 60px;
+}
+
+.header-wrapper>p {
+  color: white;
+  font-size: 1.2em;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-wrapper>p {
+  margin-top: 30px;
+}
+
+/* header section styles ends here */
+
+
+/* main section styles starts here */
+/* about and form section styles starts here */
 .about-and-form-section {
-  background-image: url(./Images/Skyblue-plain-background.webp);
+  background-color: rgb(30, 119, 119);
+  height: 550px;
 }
+
+.about-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* about section styles starts here */
+.about {
+  margin: 100px 60px 40px 0;
+  max-width: 900px;
+  width: 450px;
+}
+
+.about p {
+  font-size: 1em;
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+.about p>b {
+  font-weight: 1000;
+}
+
+.about>h3 {
+  font-size: 1.7em;
+  color: whitesmoke;
+  word-spacing: 6px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* about section styles ends here */
+
+/* form section styles starts here */
+.form {
+  max-height: 500px;
+  height: 460px;
+  max-width: 900px;
+  width: 390px;
+  margin-top: 30px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+form {
+  display: grid;
+}
+
+.form-wrapper {
+  max-width: 420px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+form>label {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+form>input {
+  margin-bottom: 10px;
+  height: 28px;
+}
+
+form>input:last-child {
+  width: 120px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: rgb(52, 201, 201);
+  color: white;
+  margin-top: 10px;
+}
+
+form>input:last-child:hover {
+  background-color: rgb(127, 225, 79);
+}
+
+form>h4 {
+  font-size: 1.1em;
+  font-style: oblique;
+  font-weight: 1000;
+  margin-bottom: 15px;
+}
+
+/* form section styles ends here */
+
+/* Marketers and clients logos section styles starts here */
+.marketers-and-client-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.marketers-and-clients {
+  border-bottom: 1px solid rgb(112, 240, 240);
+}
+
+.text-smiley-and-heading {
+  position: relative;
+}
+
+.text-smiley-and-heading>h5 {
+  position: absolute;
+  left: 21%;
+}
+
+.text-smiley-and-heading>h5 {
+  margin-top: 60px;
+}
+
+.text-smiley-and-heading>a>img {
+  position: fixed;
+  height: 70px;
+  width: 75px;
+  left: 90%;
+  top: 70%;
+}
+
+.text-smiley-and-heading>a>img:hover {
+  transform: scale(1.2);
+}
+
+.flex-images>img {
+  width: 140px;
+  margin: 100px 0 90px 0;
+}
+
+.flex-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Marketers and clients logos section ends here */
+/* Info and info graphic images section  styles starts here */
+.info-images-and-para-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.info-images-and-para-wrapper {
+  margin-bottom: 80px;
+}
+
+.info-images-and-para-wrapper img {
+  width: 400px;
+  height: 300px;
+  border-radius: 4pt;
+}
+
+.info-images-and-para-wrapper h3 {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  color: navy;
+}
+
+.info-images-and-para-wrapper p {
+  font-size: 1.2em;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+
+.info-of-zaius {
+  margin-top: 50px;
+  margin-right: 40px;
+}
+
+.margin-for-images>img {
+  margin-right: 35px;
+}
+
+.info-and-image {
+  display: flex;
+  margin-top: 50pt;
+}
+
+.info-images-and-para {
+  border-bottom: 1px solid rgb(112, 240, 240);
+}
+
+/* Info and info graphic images section  styles ends here */
+/* main section styles ends here */
+
+/* footer section styles starts here */
+.footer-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-wrapper > ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+.footer-wrapper > ul > li > a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: navy;
+}
+
+.footer-wrapper > ul > li > a:hover {
+  color: rgb(21, 206, 67);
+}
+
+.footer-wrapper >ul + span {
+  font-size: 1em;
+}
+/* footer section styles ends here */
